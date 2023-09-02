@@ -1,6 +1,6 @@
 # Домашнее задание к лекции «Unit-тестирование»
 
-[![Build status](https://ci.appveyor.com/api/projects/status/oco6d4kqrsns7ic5?svg=true)](https://ci.appveyor.com/project/Silverscreened19/ajs-test-ci-2)
+[![Build status](https://ci.appveyor.com/api/projects/status/kul7ibpbgnxga51q?svg=true)](https://ci.appveyor.com/project/Silverscreened19/ajs-tests-ci-1)
 
 **Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.
 
