@@ -1,13 +1,19 @@
-import sorts from '../health';
+import healthStatus from '../health';
 
-const list = [
-  { name: 'мечник', health: 10 },
-  { name: 'маг', health: 100 },
-  { name: 'лучник', health: 80 },
-];
+test('status healthy', () => {
+  const mage = { name: 'Маг', health: 90 };
+  const result = healthStatus(mage);
+  expect(result).toBe('healthy');
+});
 
-test('sort array', () => {
-  const result = sorts(list);
-  console.log(result);
-  expect(result[0]).toEqual({ name: 'маг', health: 100 });
+test('status wounded', () => {
+  const mage = { name: 'Маг', health: 30 };
+  const result = healthStatus(mage);
+  expect(result).toBe('wounded');
+});
+
+test('status critical', () => {
+  const mage = { name: 'Маг', health: 1 };
+  const result = healthStatus(mage);
+  expect(result).toBe('critical');
 });
