@@ -1,5 +1,7 @@
 # Домашнее задание к лекции «Unit-тестирование»
 
+[![Build status](https://ci.appveyor.com/api/projects/status/oco6d4kqrsns7ic5?svg=true)](https://ci.appveyor.com/project/Silverscreened19/ajs-test-ci-2)
+
 **Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.
 
 **Важно**: ESLint не должен выдавать ошибок.
@@ -99,7 +101,7 @@ npm test
 
 ## Mocking (задача со звёздочкой)
 
-**Важно**: данная задача не является обязательной 
+**Важно**: данная задача не является обязательной
 
 ### Легенда
 
@@ -120,12 +122,12 @@ import fetchData from './http';
 
 export function getLevel(userId) {
   const response = fetchData(`https://server/user/${userId}`);
-  
+
   // TODO: логика обработки
   if (response.status === 'ok') {
-     return `Ваш текущий уровень: ${response.level}`; 
+     return `Ваш текущий уровень: ${response.level}`;
   }
-  
+
   return `Информация об уровне временно недоступна`;
 }
 ```
